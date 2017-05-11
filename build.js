@@ -2431,7 +2431,7 @@
 	      if (controllerName === 'oculus-touch-controls') {
 	        var hand = evt.detail.component.data.hand;
 	        el.setAttribute('teleport-controls', {button: hand === 'left' ? 'ybutton' : 'bbutton'});
-	        el.setAttribute('obj-model', {obj: 'assets/models/oculus-' + hand + '-controller.obj', mtl: 'https://cdn.aframe.io/controllers/oculus/oculus-touch-controller-' + hand + '.mtl'});
+	        el.setAttribute('obj-model', {obj: 'assets/models/oculus-' + hand + '-controller.obj', mtl: 'assets/models/oculus-touch-controller-' + hand + '.mtl'});
 
 
 	        var tooltips = Array.prototype.slice.call(document.querySelectorAll('.oculus-tooltips'));
